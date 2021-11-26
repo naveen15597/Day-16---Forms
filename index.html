@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>        
+    <h2>Simple forms</h2>
+    <div class="flex-cls">
+        <div class="box1">
+            <form id="myForm" method="GET">
+                <div class="in">                
+                    <div class="lab"><label for="fname">First Name:</label></div>
+                    <div><input name="fname" type="text" required></div>
+                </div>
+                <div class="in">
+                    <div class="lab"><label for="lname">Last Name:</label></div>
+                    <div> <input name="lname" type="text" required></div>
+                </div>
+                <div class="in">
+                    <div class="lab"><label for="address">Address:</label></div>
+                    <div><input name="address" type="text" required></div>
+                </div>
+                <div class="in">
+                    <div class="lab"><label for="pin">Pincode:</label></div>
+                    <input name="pin" type="number" required>
+                </div>
+                <div class="in">
+                    <div class="lab"><label for="gender">Gender:</label></div>
+                    <input type="radio" name="gender" value="Male" required>Male
+                    <input type="radio" name="gender" value="Female" required>Female
+                </div>
+                <div class="in">
+                    <div class="lab"><label for="food">Food</label></div>
+                    <select name="food" id="food-select" required>
+                        <option value="">Please select Food</option>
+                        <option value="Briyani">Briyani</option>
+                        <option value="Dosa">Dosa</option>
+                        <option value="Idly">Idly</option>
+                        <option value="Fried Rice">Fried Rice</option>
+                        <option value="Parotta">Parotta</option>
+                    </select>
+                </div>
+                <div class="in">
+                    <div class="lab"><label for="state">State</label></div>
+                    <input name="state" type="text" required>
+                </div>
+                <div class="in">
+                    <div class="lab"><label for="country">Country</label></div>
+                    <input name="country" type="text" required>
+                </div>        
+                <button type="submit" onclick="validation()">submit</button>            
+            </form>
+        </div>
+
+
+        <div class="box2">
+            <table id="myTable">
+                <tr>
+                    <td id="firstName">First Name</td>
+                    <td id="lastName">Last Name</td>
+                    <td id="address">Address</td>
+                    <td id="pincode">Pincode</td>
+                    <td id="gender">Gender</td>
+                    <td id="food">Food</td>
+                    <td id="state">State</td>
+                    <td id="country">Country</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

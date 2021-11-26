@@ -1,0 +1,42 @@
+.flex-cls{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box1{
+    width: 18rem;
+    background-color: yellow;
+    padding: 1rem;
+}
+
+.box2{
+    width: 32rem;
+    background-color: orange;
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+/* input{
+    margin-left: 1rem;
+} */
+label{
+    width: 1rem;
+}
+
+td{
+    border: 1px solid;
+}
+
+.in{
+    display: flex;
+}
+
+.lab{
+    width: 5rem;
+}
+
+h2{
+    display: flex;
+    justify-content: space-around;
+}
